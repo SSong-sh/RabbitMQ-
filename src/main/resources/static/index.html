@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat</title>
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <link href="chat.css" rel="stylesheet">
+</head>
+<body>
+<header>RabbitMQ Chat</header>
+<div id="chat-area">
+    <div id="messages"></div>
+    <div id="input-area">
+        <input type="text" id="message" placeholder="메세지를 입력하세요." class="inputbox">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script src="chat.js"></script>
+</body>
+</html>
